@@ -2,14 +2,14 @@ import React, { useEffect } from 'react'
 
 const Two = () => {
   useEffect(() => {
-    console.log("Two Mounted");
+    console.log("MOUNT TWO");
+
     return () => {
-      console.log("Two Unmounted");
-    };
-  }, []);
+      console.log("UNMOUNT TWO");
+    }
+  }, [])
   return (
     <div>Two</div>
   )
 }
-
 export default Two

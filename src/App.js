@@ -1,39 +1,25 @@
-// import React, { useState } from 'react'
-// import Two from './components/Two'
-// import Three from './components/Three'
-// import One from './components/One'
-// import Weather from './components/Weather'
+import React, { useState } from "react";
+import Plus from "./componentsForDayTwo/Plus_Counter";
+import Minus from "./componentsForDayTwo/Minus_Counter";
 
-// const App = () => {
-//   const [counter , setCounter] = useState(0);
-//   const [showTwo , setShowTwo] = useState(true);
-//   const [showThree , setShowThree] = useState(true);
-//   const [showOne , setShowOne] = useState(true);
-//   return (
-//     <div>
-//       {/* <h1>Counter : {counter}</h1>
-//       <button onClick={() => setCounter(counter + 1)}>+</button>
-//       <button onClick={() => setCounter(counter - 1)}>-</button> */}
-//       <button onClick={() => setShowTwo("Two")}>Two</button>
-//       <button onClick={() => setShowThree("Three")}>Three</button>
-//       <button onClick={() => setShowOne("One")}>One</button>
-//       {showTwo === "Two" && <Two />}
-//       {showThree === "Three" && <Three />}
-//       {showOne === "One" && <One />}
-//       <Weather />
+function App() {
+  const [count, setCount] = useState(0);
 
-//     </div>
-//   )
-// }
+  return (
+    <div >
+      <h1>Counter Value is {count}</h1>
 
-// export default App
+      <Plus count={count} setCount={setCount} />
+      <Minus count={count} setCount={setCount} />
 
-import React from 'react'
-import MuiStyle from './componentsForMUI/MuiStyle'
- const App = () => {
-   return (
-    <MuiStyle />
-   )
- }
- 
- export default App
+     
+      {count > 20 ? (
+        <h2 >Counter Value Above 20</h2>
+      ) : (
+        <h2 >Counter Value 20 or Below</h2>
+      )}
+    </div>
+  );
+}
+
+export default App;

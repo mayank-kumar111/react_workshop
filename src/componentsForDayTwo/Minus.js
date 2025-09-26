@@ -1,7 +1,6 @@
-import React from 'react'
 import { useState } from 'react'
 
-const Minus = () => {
+const Minus = ({ count, setCount }) => {
     const [num1, setNum1] = useState(null)
     const [num2, setNum2] = useState(null)
     const [result, setResult] = useState(null)

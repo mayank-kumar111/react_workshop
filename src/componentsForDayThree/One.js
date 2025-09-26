@@ -3,13 +3,11 @@ import React, { useEffect } from 'react'
 const One = () => {
 
   useEffect(() => {
-    console.log("One Mounted");
-  
+    console.log("MOUNT ONE");
   }, []);
-
+  
   return (
-    <div>One</div>
+ <div>One</div>
   )
 }
-
 export default One
