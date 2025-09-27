@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './componentsForDayFive/Home';
 import About from './componentsForDayFive/About';
-import Movie from './componentsForDayFive/Movie';
 import StopWatch from './componentsForDayFive/StopWatch';
 import ToDo from './componentsForDayFive/ToDo';
 import Weather from './componentsForDayFive/Weather';
@@ -16,7 +15,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/movie" element={<Movie />} />
         <Route path="/stopwatch" element={<StopWatch />} />
         <Route path="/todo" element={<ToDo />} />
         <Route path="/weather" element={<Weather />} />

@@ -7,7 +7,7 @@ import {
   Button,
   Box,
   Stack,
-  IconButton, // Added for icon-based buttons
+  IconButton, 
 } from "@mui/material";
 import {
   AddCircleOutline,
@@ -25,7 +25,6 @@ const ToDo = () => {
   const [editIndex, setEditIndex] = useState(null);
   const [editValue, setEditValue] = useState("");
 
-  // Load from localStorage on mount
   useEffect(() => {
     try {
       const savedInProgress = JSON.parse(localStorage.getItem("inProgress")) || [];
@@ -37,7 +36,6 @@ const ToDo = () => {
     }
   }, []);
 
-  // Save to localStorage whenever tasks update
   useEffect(() => {
     localStorage.setItem("inProgress", JSON.stringify(inProgress));
     localStorage.setItem("completed", JSON.stringify(completed));
@@ -82,7 +80,6 @@ const ToDo = () => {
     }
   };
 
-  // Helper function to render a single task item
   const renderTask = (task, index, listId) => {
     const isEditing = editIndex === index && listId === "inProgress";
     const isCompleted = listId === "completed";

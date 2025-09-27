@@ -50,9 +50,9 @@ const Home = () => {
           Hello, I'm Mayank Kumar
         </Typography>
 
-        <Typography variant="h5" component="h2" color="text.secondary" sx={{ mb: 4, fontStyle: 'italic' }}>
+        {/* <Typography variant="h5" component="h2" color="text.secondary" sx={{ mb: 4, fontStyle: 'italic' }}>
           A passionate React Developer who loves building beautiful and functional web applications.
-        </Typography>
+        </Typography> */}
         
         <Typography variant="body1" sx={{ mb: 4, lineHeight: 1.8 }}>
           I am currently pursuing my B.Tech in Information Technology at SKIT Jaipur. My journey into web development has led me to explore modern technologies like **React** and **Material-UI**. This portfolio showcases some of my projects, reflecting my dedication to learning and my passion for clean code and user-friendly design.

@@ -11,7 +11,7 @@ import TimelineDot from '@mui/lab/TimelineDot';
 const About = () => {
   const projects = [
     { name: "ToDo App", icon: <Code /> },
-    { name: "Movie App", icon: <Movie /> },
+    // { name: "Movie App", icon: <Movie /> },
     { name: "Weather App", icon: <Favorite /> },
     { name: "Stopwatch App", icon: <Watch /> },
   ];
